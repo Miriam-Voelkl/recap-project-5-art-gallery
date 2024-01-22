@@ -1,6 +1,5 @@
 import ArtPiecePreview from "../ArtPiecePreview";
 import styled from "styled-components";
-import Spotlight from "../Spotlight";
 
 const StyledList = styled.ul`
   list-style: none;

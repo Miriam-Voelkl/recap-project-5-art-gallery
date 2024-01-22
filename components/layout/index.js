@@ -1,12 +1,21 @@
 import Navigation from "../navigation";
+import styled from "styled-components";
+
+const StyledFooter = styled.footer`
+position: fixed;
+bottom: 0;
+background-color: lightgrey;
+width: 100%;
+`
+
 
 export default function Layout({ children }) {
   return (
     <>
       <div>{children}</div>
-      <footer>
+      <StyledFooter>
         <Navigation />
-      </footer>
+      </StyledFooter>
     </>
   );
 }

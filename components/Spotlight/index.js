@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Spotlight({ image, artist, dimensions }) {
   return (
     <>
@@ -7,8 +8,8 @@ export default function Spotlight({ image, artist, dimensions }) {
       <p>{artist}</p>
       <Image
         src={image}
-        width={dimensions.width / 10}
-        height={dimensions.height / 10}
+        width={dimensions.width / 5}
+        height={dimensions.height / 5}
         alt={`a picture by ${artist}`}
       ></Image>
     </>
