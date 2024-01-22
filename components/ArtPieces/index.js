@@ -17,6 +17,7 @@ export default function ArtPieces({ artData }) {
       <Spotlight
         image={randomArtPiece.imageSource}
         artist={randomArtPiece.artist}
+        dimensions={randomArtPiece.dimensions}
       ></Spotlight>
       <StyledList>
         {artData.map((artPiece) => (
