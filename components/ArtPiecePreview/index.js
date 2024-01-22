@@ -6,14 +6,17 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 `;
 
 const StyledImage = styled(Image)`
   width: 100%;
+  object-fit: cover;
 `;
 
 const ImageContainer = styled.figure`
   width: 450px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -23,6 +26,8 @@ const Paragraph = styled.p`
   margin-bottom: 20px;
   background-color: black;
   color: white;
+  width: 450px;
+  line-height: 2rem;
 `;
 
 export default function ArtPiecePreview({
@@ -41,14 +46,14 @@ export default function ArtPiecePreview({
             <StyledImage
               src={image}
               alt={title}
-              height={dimensions.height / 5}
-              width={dimensions.width / 5}
+              width={dimensions.width}
+              height={450}
             ></StyledImage>
           </Link>
-          <Paragraph>
-            {`"${title}"`}, {artist}
-          </Paragraph>
         </ImageContainer>
+        <Paragraph>
+          {`"${title}"`}, {artist}
+        </Paragraph>
       </Wrapper>
     </>
   );
