@@ -17,6 +17,7 @@ export default function ArtPieces({ artData }) {
               title={artPiece.name}
               artist={artPiece.artist}
               dimensions={artPiece.dimensions}
+              slug={artPiece.slug}
             ></ArtPiecePreview>
           </li>
         ))}
