@@ -7,18 +7,8 @@ const StyledList = styled.ul`
 `;
 
 export default function ArtPieces({ artData }) {
-  function getRandomElement(array) {
-    return array[Math.floor(Math.random() * array.length)];
-  }
-  const randomArtPiece = getRandomElement(artData);
-
   return (
     <>
-      <Spotlight
-        image={randomArtPiece.imageSource}
-        artist={randomArtPiece.artist}
-        dimensions={randomArtPiece.dimensions}
-      ></Spotlight>
       <StyledList>
         {artData.map((artPiece) => (
           <li key={artPiece.slug}>
