@@ -11,7 +11,6 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: system-ui;
     text-align: center;
   }
 `;

@@ -4,12 +4,14 @@ import styled from "styled-components";
 const StyledUl = styled.ul`
   display: flex;
   list-style: none;
-  justify-content: space-around;
-  ;
+  justify-content: center;
+  gap: 25px;
 `;
 const StyledLink = styled(Link)`
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: black;
   &:hover {
     text-decoration: underline;
   }
